@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemploNavegationPage.MainPage">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <CollectionView x:Name="ProductsCollectionView">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Span="3" Orientation="Vertical"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="Gray" Margin="10" Padding="10" BackgroundColor="Bisque">
+                            <StackLayout>
+                                <Image Source="{Binding ImageUrl}" Aspect="AspectFill" HeightRequest="180" WidthRequest="280"/>
+                                <Label Text="{Binding Name}" FontSize="16" HorizontalOptions="Center" />
+                                <Label Text="{Binding Price}" FontSize="14" HorizontalOptions="Center" TextColor="Green" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

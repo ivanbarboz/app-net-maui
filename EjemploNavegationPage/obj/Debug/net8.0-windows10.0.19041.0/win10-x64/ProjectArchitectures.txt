@@ -1,0 +1,1 @@
+D:\5to semestre\diseño y desarrrollo de app moviles\EjemploNavegationPage\EjemploNavegationPage\EjemploNavegationPage.csproj;x64
